@@ -1,0 +1,21 @@
+{% extends "header.html" %}
+
+{% block content %}
+
+<h1>Animals</h1>
+
+{% for animal in animals %}
+  <h3>~~~~~{{animal.name}}~~~~~</h3>
+  <p>color: {{animal.color}}</p>
+  <p>legs: {{animal.legs}}</p>
+  <p>breed: {{animal.breed}}</p>
+
+  {% if animal.is_dog %}
+    <h6>High quality animal!</h6>
+
+  {% endif %}
+
+{% endfor %}
+
+
+{% endblock %}
