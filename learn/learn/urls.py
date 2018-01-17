@@ -21,7 +21,7 @@ from django.conf.urls import url
 from django.contrib import admin
 
 urlpatterns = [
-    url(r'^$', include('teaching.urls')),
+    url(r'^', include('teaching.urls')),
     url(r'^teaching/', include('teaching.urls')),
     url(r'^admin/', admin.site.urls),
 ]
