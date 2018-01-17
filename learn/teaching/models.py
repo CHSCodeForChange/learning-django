@@ -2,6 +2,7 @@ from django.db import models
 
 # Create your models here.
 class Animal(models.Model):
+    objects= models.Manager()
     breed = models.CharField(max_length=80)
     color = models.CharField(max_length=80)
     name = models.CharField(max_length=80)
